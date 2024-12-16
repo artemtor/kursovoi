@@ -1,0 +1,462 @@
+{
+	"info": {
+		"_postman_id": "4ebed105-b7fa-43b5-b87b-192374a3b0e7",
+		"name": "kursovoi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31917645"
+	},
+	"item": [
+		{
+			"name": "https://k-scherbakov.сделай.site/api/registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"афафафыа\",\r\n\"full_name\": \"luda\",\r\n\"email\": \"luda@mail.ru\",\r\n\"phone\": \"333\",\r\n\"password\": \"Qwerty\",\r\n\"passport\": \"7777777777\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/registration",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://k-scherbakov.сделай.site/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ilya\",\r\n    \"password\": \"Qwerty\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/login",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://k-scherbakov.сделай.site/api/profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3Qrdnco2YGfXBpb3C7IcstUWHMPeUJSy",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/profile",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://k-scherbakov.сделай.site/api/yachts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/yachts",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"yachts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://k-scherbakov.сделай.site/api/change-email",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0iVmw602jHD3_Oy0p9_ftFnCW1bLIKGi",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\": \"luda@mail.ru\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/change-email",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"change-email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://k-scherbakov.сделай.site/api/order_del",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "cJjYiMS1v6ngUxsWWTreP5zVpUAZXlI_",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/order_del?trip_id=1",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"order_del"
+					],
+					"query": [
+						{
+							"key": "trip_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://k-scherbakov.сделай.site/api/search-yacht?city=Санкт-Петербург",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/search-yacht?city=ч",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"search-yacht"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "ч"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://k-scherbakov.сделай.site/api/add-admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "aU_TBhlGjMzhVjezP9now75dN5nANipr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"yacht_id\": \"1\",\r\n\"date_trip\": \"20.12.2024\",\r\n\"city\": \"Шига\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/add-admin",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"add-admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://k-scherbakov.сделай.site/api/date",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "bAcF2R0M0WitkQ_piPxsIcxxvZU7dxFV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_trip\": \"2\",\r\n    \"date_trip\": \"30.11.2024\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/date",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"date"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://k-scherbakov.сделай.site/api/formalization",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "rjxB95Ugf4EmtIXdpFTCZ21R31CNOnK",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"trip_id\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/formalization",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"formalization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://k-scherbakov.сделай.site/api/yacht",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jkHB3U3-OWzsFz2qdUjxCVBjIQRLTpBn",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_trip\": \"1\",\r\n    \"yacht_id\": \"2\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/yacht",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"yacht"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://k-scherbakov.сделай.site/api/order",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "bAcF2R0M0WitkQ_piPxsIcxxvZU7dxFV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-scherbakov.сделай.site/api/order",
+					"protocol": "https",
+					"host": [
+						"k-scherbakov",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
